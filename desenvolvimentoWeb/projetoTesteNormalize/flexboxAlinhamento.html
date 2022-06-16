@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style type="text/css">
+        #conteudo {
+            background: #dcdcdc;
+            height: 400px;
+            display: flex;
+            /*row|row-reverse|column|column-reverse*/
+            /*flex-direction: row;*/
+            /*nowrap|-> este item diz que não vai existir uma quebra
+            wrap|-> este item distribui na area o conteudo
+            wrap-reverse|-> distribui os itens ao contrário.
+            */
+            /*flex-wrap: nowrap;*/
+            /*flex-start|-> alinha os itens no inicio da tela
+            flex-end|-> alinha os itens no final da tela
+            center|-> centraliza os itens 
+            space-between|-> distribui os itens, sem deixar espaços nas laterais
+            space-around|-> distribui os itens colocando um espaçamento tanto na esquerda quanto na direita
+            */
+            /*justify-content: space-around;*/
+            /*stretch|-> estica os itens para preencher todo o box
+            center|-> centraliza especificamente no box
+            flex-start|-> alinha na parte inicial da tela
+            flex-end|-> alinha na parte final da tela
+            baseline|-> alinha com base na linha do texto 
+            */
+            /*align-items: flex-start;*/
+        }
+        .item {
+            width: 120px;
+            height: 120px;
+            margin: 10px;
+            background: white;
+            border: 1px solid gray;
+            padding: 5px;
+            flex-grow: 0;
+            flex-shrink: 0;
+            /*flex-basis: 400px; /*define o tamanho dos itens do box, como se fosse um width para todos*/
+        }
+        /*diminui o tamanho dependendo do numero aplicado em relação aos outros itens do box*/
+        /*.item2 {
+            flex-shrink: 1;
+        }*/
+        /* prenche o box relacionado conforme o valor aplicado ex:. quanto maior o numero, maior o tamanho aplicado*/
+        /*.item2 {
+            flex-grow: 1;
+        }*/
+
+        /*define a ordem dos itens, até mesmo transformando em negativos*//*
+
+        .ordem1 {
+            order: 1;
+        }
+        .ordem2 {
+            order: 2;
+        }
+        .ordem3 {
+            order: 3;
+        }
+        .ordem4 {
+            order: 4;
+        }*/
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <div id="conteudo">
+        <div class="item">item 01</div>
+        <div class="item">item 02</div>
+        <div class="item item2">item 03</div>
+        <div class="item">item 04</div>
+    </div>
+    
+</body>
+</html>

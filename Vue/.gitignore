@@ -1,0 +1,7 @@
+/node_modules
+.package.json
+.package-lock.json
+./calculator/node_modules
+./montyhall/node_modules
+.most-used-words/node_modules
+

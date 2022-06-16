@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callbak e promisses</title>
+</head>
+<body>
+    <!--<button onclick="loadPosts()" >Belezura</button>
+    <div id="beleza"></div>
+    -->
+    <!--<button onclick="inserirPost()"> botao </button>-->
+    <!--<button onclick="enviar()"> enviar </button>-->
+    <input type="file" accept="image/*" id="imagem">
+    <button onclick="mostrar()" id="m" > Mostrar</button>
+    <div id="posts"></div>
+    <script>
+        /*
+
+        function mostrar(){
+            let reader = new FileReader()
+            let imagem = document.getElementById('imagem').files[0]
+
+            reader.onloadend = function (){
+                let img = document.createElement('img')
+                img.src = reader.result
+                img.width = 300
+
+                document.getElementById('posts').appendChild(img)
+            }
+
+            reader.readAsDataURL(imagem)
+
+        }
+
+
+
+        
+        /*function mostrar(){
+            let imagem = document.getElementById('imagem').files[0]
+
+            let img = document.createElement('img')
+            img.src = URL.createObjectURL(imagem)
+            img.width = 400
+
+            document.getElementById('posts').appendChild(img)
+        }
+
+
+
+        /*async function enviar(){
+                let arquivo = document.getElementById('posts').files[0]
+
+                let body = new FormData()
+                body.append('title', 'blá, blá, blá!!!')
+                body.append('arquivo', arquivo)
+
+                let requisicao = await fetch('https://www.meusite.com.br/upload', {
+                method: 'POST',
+                body: body,
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            })
+
+        }
+
+    
+    /*
+        async function inserirPost(){
+            document.getElementById('posts').innerHTML = 'Carregando...'
+
+            let requisicao = await fetch ('https://jsonplaceholder.typicode.com/posts', {
+                method: 'POST',
+                body: JSON.stringify({
+                    title: 'Titulo de teste',
+                    body: 'Corpo de teste',
+                    userId: 4
+                }),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            let json = await requisicao.json()
+
+            console.log(json)            
+        }
+
+
+        /*function pegarTemperatura(){
+            return new Promise(function(resolve, reject){
+                console.log('pegando temperatura...')
+
+                setTimeout(function(){
+                    resolve('40 na sombra')
+                }, 4000)
+            })
+        }
+
+        let tempo = pegarTemperatura()
+        tempo.then(function(resultado){
+            console.log('temperatura: ' + resultado)
+        })
+
+        tempo.catch(function(error){
+            console.log('eita, deu erro!')
+        })
+        */
+       /*
+       function loadPosts(){
+           document.getElementById('beleza').innerHTML = 'Gostosa'
+
+           fetch('https://jsonplaceholder.typicode.com/posts')
+           .then(function(resultado){
+               return resultado.json()
+           })
+           .then(function(json){
+               document.getElementById('beleza').innerHTML = json.length + ' posts'
+           })
+           .catch(function(error){
+               console.log('deu problema')
+           })
+       }*/
+
+       /*function loadPosts(){
+           document.getElementById('beleza').innerHTML = 'Gostosa'
+
+           fetch('https://jsonplaceholder.typicode.com/posts')
+                .then(function(resultado){
+                    return resultado.json()
+                })
+                .then(function(json){
+                    montarBlog(json)
+                })
+                .catch(function(error){
+                    console.log('deu problema')
+                })
+       } 
+
+       function montarBlog(lista){
+           let html = ''
+           for(let i in lista){
+               html += '<h3>'+lista[i].title+'</h3>'
+               html += lista[i].body+'</br>'
+               html += '<hr>'
+           }
+
+           document.getElementById('beleza').innerHTML = html
+       }
+       */
+       
+       /*async function loadPosts(){
+            document.getElementById('beleza').innerHTML = 'Gostosa'
+            
+            let requisicao = await fetch('https://jsonplaceholder.typicode.com/posts')
+
+            let json = await requisicao.json()
+            montarBlog(json) 1...*/
+            
+            
+            
+             /*fetch('https://jsonplaceholder.typicode.com/posts')
+                .then(function(resultado){
+                    return resultado.json()
+                })
+                .then(function(json){
+                    montarBlog(json)
+                })
+                .catch(function(error){
+                    console.log('deu problema')
+                })*/
+        /*...2} 
+
+       function montarBlog(lista){
+           let html = ''
+           for(let i in lista){
+               html += '<h3>'+lista[i].title+'</h3>'
+               html += lista[i].body+'</br>'
+               html += '<hr>'
+           }
+
+           document.getElementById('beleza').innerHTML = html
+       }*/
+    </script>
+
+    
+</body>
+</html>

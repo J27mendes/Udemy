@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções data</title>
+</head>
+<body>
+    <script> /* 
+    var dataTeste = new Date(2021, 11, 28)
+    //28/12/2021
+    var dataTeste2 = new Date(2027, 01, 23)
+    //23/01/2027
+
+    document.write(dataTeste.toString())
+    document.write('<hr>')
+    document.write(dataTeste2.toString())
+    document.write('<br><br><h3>Converter Datas, para podermos calcula-las</h3>')
+    //converter datas para algo que possamos calcular
+    document.write(dataTeste.getTime() + ' este é o primeiro')
+    document.write('<hr>')
+    document.write(dataTeste2.getTime() + ' este é o segundo')
+    document.write('<br><br><hr>')
+    // a data começa aser contada apartir de 1 de janeiro de 1970
+
+    //encontrar a quantidade de milisegundos entre dataTeste e dataTeste2
+    var milisegundos = Math.abs(dataTeste.getTime() - dataTeste2.getTime())
+    document.write(milisegundos + ' <-- este é o numero')
+
+    var milisegundosDia = (1 * 24 * 60 * 60 * 1000)
+    document.write('<hr>')
+    document.write(milisegundosDia)
+    document.write('<br><br>')
+    var quantidadeDias = Math.round(milisegundos / milisegundosDia)
+    document.write('A diferença entre os dias são : ' + (quantidadeDias) + ' dias')
+    document.write('<br><br><hr>')
+    
+    // 1 dia tem 365 dias
+    var dias = 365
+    var anos = quantidadeDias / dias
+    document.write('tudo isso dá ' + anos.toFixed(0) + ' anos')
+
+
+    /*var data = new Date()
+        document.write(data.toString())
+        data.setDate(data.getDate() + 1)
+        document.write('<hr>')
+        document.write(data.toString())
+        // adicionar ou remover meses
+        document.write('<br><br><hr><h4>alterando o mês</h4>')
+        data.setMonth(data.getMonth() + 1)
+        document.write(data.toString())
+        //adicionando ou removendo anos
+        document.write('<br><br><hr><h4>alterando o ano</h4>')
+        data.setFullYear(data.getFullYear() + 2)
+        document.write(data.toString())
+
+        /*
+        //var date = new Date()
+        document.write(data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear())
+        //28 / 12 / 2021*/
+    </script>    
+</body>
+</html>

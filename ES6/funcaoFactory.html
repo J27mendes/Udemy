@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Factory</title>
+</head>
+<body>
+    <script>
+        //Requisição
+        //Resposta http://
+
+        let bicicleta = {
+            cor: 'branca',
+            marcha: 'única',
+            aro: 12,
+            pedalar(){
+                console.log('tudo pronto para pedalar')
+            }
+        }
+
+        let bicicleta2 = {
+            cor: 'verde',
+            marcha: '18 velocidades',
+            aro: 29,
+            pedalar(){
+                console.log('tudo pronto para pedalar')
+            }
+        }
+        //-----------------------------------------------------
+
+       /* let bicicletaFactory = function (){
+            //lógica
+            //requisição http
+            //resposta http
+            return {
+                cor: 'branca',
+                marcha: 'única',
+                aro: 12,
+                pedalar(){
+                    console.log('tudo pronto para pedalar')
+                }
+            }
+        }
+
+        let bicicleta3 = bicicletaFactory()
+
+        console.log(bicicleta)
+        console.log(bicicleta2)
+        console.log(bicicleta3)
+        console.log(bicicleta2.cor)
+
+        console.log(`cor: ${bicicleta3.marcha}`)
+        bicicleta3.pedalar()*/
+//-----------------------------------------------------
+// a operação continua estatica para mudarmos isso
+// passamos o parâmetro na função e depois passar os parâmetros na chamada da função
+      /*  let bicicletaFactory = function (cor, marcha, aro){
+            //lógica
+            //requisição http
+            //resposta http
+            return {
+                /*cor: cor,
+                marcha: marcha,
+                aro: aro,*//*
+                cor,
+                marcha,
+                aro,
+                pedalar(){
+                    console.log('tudo pronto para pedalar')
+                }
+
+            }
+        }
+
+        let bicicleta4 = bicicletaFactory('azul', '18 velocidades', 29)// aqui
+        console.log(bicicleta4)
+        bicicleta4.pedalar()
+        */
+    </script>    
+</body>
+</html>

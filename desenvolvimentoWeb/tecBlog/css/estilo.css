@@ -1,0 +1,127 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-size: 1em;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    color: blue;
+}
+
+.cabecalho {
+    background-color: rgb(230, 98, 153);
+    color: rgb(46, 44, 44);
+    text-align: center;
+    padding: 15px;
+}
+h1 {
+    color: rgb(46, 44, 44);
+    font-size: 2.5em;
+}
+
+.branco {
+    color: white
+}
+
+.logo, .menu {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px 12px;
+}
+/* formatação cabeçalho */
+.cabecalho a:link, .cabecalho a:visited {
+    color: rgb(208, 255, 0);
+}
+.cabecalho a:hover {
+    background: rgb(208, 255, 0);
+    color: rgb(101, 101, 221);
+    padding: 10px 15px;
+    border: inset  4px rgb(101, 101, 221);
+}
+/* fim da formatação do cabeçalho */
+/* formatação postagens */
+.principal {
+    width: 950px;
+    margin: 0px 100px;
+    padding: 15px;
+}
+.postagens {
+    color:rgb(208, 255, 0);
+    width: 700px;
+    float: left;
+}
+.postagemInterna {
+    background: rgb(101, 101, 221);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;    
+}
+
+h2 {
+    padding-bottom: 20px;
+}
+p{
+    padding-top: 20px;
+}
+
+.postagemInterna a {
+    color: #000;
+    font-weight: bolder;
+    padding: 20px;
+    float: left;
+}
+
+.postagemInterna a:hover {
+    color: rgb(208, 255, 0);
+    background: rgb(230, 78, 153);
+}
+
+.data {
+    text-align: right;
+    color: whitesmoke;
+}
+/* fim da formatação postagens */
+.lateral {
+    background: rgb(208, 255, 0);
+    width: 230px;
+    float: right;
+}
+h3 {
+    font-size: 18px;
+    background: rgb(230, 98, 153);
+    color: rgb(208, 255, 0);
+    text-align: center;
+}
+.postagem-lateral {
+    padding: 5px;
+    font-size: 0.8em;
+    text-align: justify;
+    border-bottom: groove 2px grey;
+    
+}
+.conteudo-lateral p {
+    padding-bottom: 10px;
+}
+.leia a:hover {
+    font-weight: bold;
+    color:violet
+}
+.categorias {
+    background: whitesmoke;
+    font-size: 20px;
+}
+.categorias a {
+    text-decoration: underline;
+}
+.rodape {
+    clear: both;
+    background: rgb(230, 98, 153);
+    color: white;
+    text-align: center;
+}

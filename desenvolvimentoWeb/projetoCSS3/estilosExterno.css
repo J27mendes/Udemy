@@ -1,0 +1,9 @@
+.testando{
+    background: rgb(109, 218, 20);
+    border: solid 60px fuchsia;
+    position: static;
+    text-align: center;
+    color: white;
+    height: 200px;
+    width: 500px;
+}

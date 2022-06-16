@@ -1,0 +1,14 @@
+{
+    "include": [
+        "src/**/*.ts"
+    ],
+    "compilerOptions": {
+        "rootDir": "src",
+        //usando o false ao invés de true o compilador
+        //typeScript vai encontrar mais compatibilidades 
+        "noImplicitAny": true,
+        "target": "es5"
+    }
+}
+
+

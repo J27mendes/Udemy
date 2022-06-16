@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- load babel -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>variavel let, var e const</title>
+</head>
+<body>
+    <script type="text/babel">
+        //escopo global é possivel usar em todos os locais
+        //a utilização do 'var' declarada fora de uma função possibilita que o elemento fique no escopo global
+        //o escopo global é o objeto window
+        /*var serie = 'Boneca Russa'
+
+        function x(){
+            var serie = 'Happy!'
+            console.log('função: ' + serie + fruta)
+
+            if(true){
+                console.log('esopo de bloco dentro da função: ' + serie)
+            }
+        }
+
+        
+
+        if(true){
+            var fruta = 'caju'
+            console.log('escopo global: ' + serie)
+            //se for declara uma variavel com var dentro do escopo de bloco
+            //ela vai ser içada para o escopo global, sendo possivel utilizar
+            //dentro da função, mas esta função precisa ser chamada apos a declaracao
+            // da variavel
+            
+        }
+        x()
+        ///////////////////////////////////////////////////////////////*/
+
+        //console.log('escopo global: ' + presente)
+        // se declarada no global ela pode ser lida no escopo de bloco
+        //mesmo dentro da função
+
+        //mas se for declarada dentro da função não poderáser lida fora dela
+        //let presente = 'brinquedo'
+    
+        /*if(true){
+            //se declarar o var no escopo de bloco e outra com o mesmo nome no blogal
+            // a que foi declarada com o var vai sobrepor a que foi com o let
+            //var presente = ('chinelo')
+            console.log('dentro do escopo de bloco: ' + presente)
+        }
+
+        function teste (){
+            let presente = 'guerra'
+            console.log(presente)
+        }
+        teste()
+        /////////////////////////////////////////////////////////////*/
+       /* const Serie = "arcane"
+        // constantes servem para armazenar dados que não serão alterados
+        //durante o processo
+        function x(){
+            
+            console.log(Serie)
+            // a constante pode ser acessada dentro da função
+            // mas se declarada uma variavel identica dentro
+            // da função, a que se encontra dentro é que vai ser lida
+        }
+
+        x()
+
+        console.log(Serie)
+*/
+    </script>    
+</body>
+</html>

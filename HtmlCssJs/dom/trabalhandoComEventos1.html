@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Trabalhando com Eventos #01</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class="conteudo exercicio">
+    <div>
+        <a href="https://google.com.br" onclick="navegarDepois5(event)">Google</a>
+    </div>
+    <script>
+        function navegarDepois5(e){
+            e.preventDefault()
+            console.log('saindo em 5 segundos...')
+            setTimeout(() => {
+                const link = e.target // <- este é o link para acessar a página
+                window.location.href /* <- esta é a própria pagina na web */ = link.href
+                console.log('saindo agora')
+            }, 5000)
+        } 
+        
+        /* const a = document.querySelector('a')
+        a.onclick = navegarDepois5 */
+        const a = document.querySelector('[esperar-um-pouco]')
+        a.onclick = navegarDepois5
+    </script>
+</body>

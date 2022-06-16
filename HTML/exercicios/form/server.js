@@ -1,0 +1,25 @@
+const express = require('express')
+const app = express()
+const bodyParser = require('body-parser')
+
+app.use(bodyParser.urlencoded({extended: true}))
+
+app.post('/usuarios', (req, resp) => {
+    console.log(req.body)
+    resp.send('<h1>Parabéns</h1>')
+})
+/* usando o metodo get, os parametros são enviados diretamente na url
+por isso é necessario usar a query
+ex:.
+app.get('/usuarios',(req, resp) => {
+console.log(req.query)
+})
+ */
+
+app.post('/usuarios/:id', (req, resp) => {
+    console.log(req.params.id)
+    console.log(req.body)
+    resp.send('<h1>Parabéns, Usuário alterado</h1>')
+})
+
+app.listen(3003)

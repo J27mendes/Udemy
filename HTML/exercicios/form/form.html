@@ -1,0 +1,48 @@
+<h1>Formulário</h1>
+<!-- form method="get"
+usando este metodo existirá uma falha de segurança pois os parametros serão enviados 
+diretamente na url-->
+<form method="post">
+    <input type="hidden" name="id" value="3"> <!-- serve para carregar um valor escondido do usuario -->
+    <input type="text" name="name">
+    <input type="password" name="senha">
+    <textarea name="bio" cols="30" rows="10"></textarea>
+    <div>
+        <input type="radio" name="tipo" value="Admin"> Administrador
+        <input type="radio" name="tipo" value="Regular"> Regular
+        <input type="radio" name="tipo" value="Professor"> Professor
+    </div>
+    <div>
+        <input type="checkbox" name="ativo"> Ativo
+    </div>
+    <select name="estado">
+        <option value="Ac">Acre</option>
+        <option value="Ba">Bahia</option>
+        <option value="Ce">Ceará</option>
+    </select>
+    <select name="interesses" multiple size="5">
+        <option value="js">Javascript</option>
+        <option value="java">Java</option>
+        <option value="php">php</option>
+        <option value="python">python</option>
+        <option value="go">go</option>
+        <option value="c">C</option>
+
+    </select>
+    <button formaction="http://localhost:3003/usuarios">Incluir</button>
+    <button formaction="http://localhost:3003/usuarios/3">Alterar</button>
+</form>
+
+<style>
+    input,
+    textarea,
+    select {
+        display: block;
+        margin-bottom: 10px;
+    } 
+
+    input[type=radio],
+    input[type=checkbox] {
+        display: inline;
+    }
+</style>

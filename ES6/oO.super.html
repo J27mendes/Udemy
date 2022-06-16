@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador Super()</title>
+</head>
+<body>
+    <script>
+        /*
+    class Animal{
+        constructor(bico, canto, tamanho, peso, cor, reinoAnimal, tipodeCorpo, habitat, sabeFalar, giraCabeca) {
+            this.cor = cor
+            this.tamanho = tamanho
+            this.tipodeCorpo = tipodeCorpo
+            this.reinoAnimal =reinoAnimal
+            this.habitat = habitat
+            this.peso = peso
+        }
+        
+        //é possivel resgatar qualquer ação 
+        dormir(aonde){
+            let localAondeDorme = 'na rua'
+            if(aonde){
+            console.log(aonde)
+            } else {
+                console.log(localAondeDorme)
+            }
+
+        }
+
+        comer(comida){
+            if(comida){
+                console.log(comida)
+            } else {
+                console.log('carne')
+            }
+        }
+
+        hábito(tipo){
+            if(tipo){
+                console.log(tipo)
+            } else {
+                console.log('diurno')
+            }
+        }
+    }
+
+    //e assim por diante os parametros são passados para o objeto pai
+    // agora são os atributos bico e canto que estão sendo passados para o pai
+    class Aves extends Animal {
+        constructor(bico, canto, tamanho, peso, cor, reinoAnimal, tipodeCorpo, habitat, sabeFalar, giraCabeca) {
+            super(bico, canto, tamanho, peso, cor, reinoAnimal, tipodeCorpo, habitat, sabeFalar, giraCabeca)
+            this.bico = bico
+            this.canto = canto
+            }
+
+            voar(){
+                console.log('voando')
+            }
+    }
+
+// para deixar como herança os metodos  e atributos é necessario depois do nome da classe colocar a palavra reservada extends e depois a classe
+// que vai enviar 
+    
+
+    class Papagaio extends Aves{
+        constructor(bico, canto, tamanho, peso, cor, reinoAnimal, tipodeCorpo, habitat, sabeFalar, giraCabeca){
+            super(bico, canto, tamanho, peso, cor, reinoAnimal, tipodeCorpo, habitat, sabeFalar, giraCabeca)
+            this.sabeFalar = sabeFalar
+        }
+    }
+    
+    //é possivel passar quantos parametros for necessario
+    //o operador super() é que leva as informações para o objeto pai
+    class Coruja extends Aves {
+        constructor(bico, canto, tamanho, peso, cor, reinoAnimal, tipodeCorpo, habitat, giraCabeca){
+            super(bico, canto, tamanho, peso, cor, reinoAnimal, tipodeCorpo, habitat, giraCabeca)
+            this.giraCabeca = giraCabeca
+        }
+    }
+
+    //não importa o nome da variavel, o objeto instanciado é que vai aparecer no debbug
+    let coruja = new Coruja('pequeno', 'silvestre', 30, 420, 'marrom e branco', 'aves', 'penugem', 'silvestre', true)
+    let papagaio = new Papagaio('médio', 'imitar', 20, 300, 'verde', 'aves', 'penugem', 'doméstico ou silvestre', false)
+    // papagaio.dormir('dorme de dia')
+    // é possivel resgatar qualquer ação 
+
+
+    console.log(papagaio)
+    console.log(coruja)
+*/
+    </script>
+    
+    
+</body>
+</html>

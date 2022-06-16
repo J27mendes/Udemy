@@ -1,0 +1,85 @@
+html {
+    cursor: url(imagens/mata_mosquito.png) 30 30, auto;
+}
+
+body {
+    background-image: url(imagens/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.mosquitoPequeno {
+    width: 30px;
+    height: 30px;
+}
+
+.mosquitoNormal {
+    width: 50px;
+    height: 50px;
+}
+
+.mosquitoMedio {
+    width: 80px;
+    height: 80px;
+}
+
+.mosquitoGrande {
+    width: 130px;
+    height: 130px;
+}
+
+.ladoEsquerdo {
+    transform: scaleX(1);
+}
+
+.ladoDireito {
+    transform: scaleX(-1);
+}
+
+.painel {
+    position: absolute;
+    width: 190px;
+    padding: 10px;
+    bottom: 0px;
+    left: 0px;
+    border-top: solid 1px #fff;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+.vidas {
+    float: left;
+}
+
+.cronometro {
+    float: left;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* estilizando a pagina inicial */
+
+#selecionandoNiveis option {
+    text-align: center;
+    color: #000;
+    font-weight: bolder;
+}
+#selecionandoNiveis .v0 {
+    background: wheat;
+}
+#selecionandoNiveis .v1 {
+    background: rgb(244, 245, 179);
+}
+#selecionandoNiveis .v2 {
+    background: rgb(187, 245, 179);
+}
+#selecionandoNiveis .v3 {
+    background: rgb(205, 223, 230);
+}
+#selecionandoNiveis .v4 {
+    background: rgb(73, 159, 216);
+}
+
+#selecionandoNiveis .v5 {
+    background: rgb(73, 140, 216);
+}

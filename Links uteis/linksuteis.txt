@@ -1,0 +1,7 @@
+Link para download do ZIP: http://files.cod3r.com.br/curso-web/bootstrap.zip
+
+GitHub da Cod3r: https://github.com/cod3rcursos
+
+Repositório do curso: https://github.com/cod3rcursos/web-moderno
+
+Repositório da seção: https://github.com/cod3rcursos/web-moderno/tree/master/exercicios-web/bootstrap

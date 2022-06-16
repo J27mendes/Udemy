@@ -1,0 +1,11 @@
+.navegador {
+    background: #ffaaaa;
+    color: rgb(43, 42, 42);
+    padding: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 7px;
+    text-shadow: 2px 1px #ec5b5b;
+}

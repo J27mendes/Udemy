@@ -1,0 +1,25 @@
+.corBase {
+    height: 40%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(77, 165, 81);
+    color: rgb(250, 250, 245);
+}
+
+.estiloInicio {
+    cursor: pointer;
+}
+
+.lista {
+    display: grid;
+    align-items: left;
+    width: 23rem;
+    background: rgb(120, 190, 120);
+    color: rgb(17, 17, 17);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 7px;
+    border: 5px outset rgb(102, 100, 100);
+}

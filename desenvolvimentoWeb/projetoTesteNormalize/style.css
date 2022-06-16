@@ -1,0 +1,43 @@
+/*header {
+    padding: 30px;
+    width: 250px;
+    border: solid 2px #be0240;
+}
+nav {
+    font-size: 26px;
+    line-height: 30px;
+}
+ul.a{
+    list-style: none;
+}
+li a {
+    text-decoration: none;
+}
+article {
+    float: left;
+    width: 70%;
+    background: sandybrown;
+}
+article h3 {
+    background: #000;
+    border: 2px solid #b9f0e4;
+    color: #b9f0e4;
+}
+section {
+    background: url(./imagem/lima.jpg);
+}
+section h4 {
+    background: rgb(197, 225, 230, 0.8);
+}
+aside {
+    float: right;
+    width: 29%;
+    background: violet;
+}
+footer {
+    clear: both;
+    text-align: right;
+    background: royalblue;
+    color: white;
+}
+////////////////////////////////////////////////////////////*/

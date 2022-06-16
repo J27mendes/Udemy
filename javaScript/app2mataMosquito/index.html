@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Mata Mosquito</title>
+</head>
+<body>
+    <div id="container">
+        <div class="row">
+            <div class="col">
+                <div class="d-flex justify-content-center">
+                    <img src="imagens/game.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="d-flex justify-content-center">
+                    <div class="mb-2">
+                        <select id="selecionandoNiveis" class="form-control">
+                            <option class="v0" value=""> ## Selecione o Nível ##</option>
+                            <option class="v1" value="facil">Fácil #</option>
+                            <option class="v2" value="medio">Médio ## </option>
+                            <option class="v3" value="dificil">Difícil ## </option>
+                            <option class="v4" value="goku">Goku #### </option>
+                            <option class="v5" value="automatico"> #... Venceu Siga em Frente ...# </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    
+
+        <div class="row">
+            <div class="col">
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-danger btn-lg" onclick="iniciarJogo()">Iniciar Jogo</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <script>
+        function iniciarJogo(){
+            let nivel = document.getElementById('selecionandoNiveis').value
+
+            if(nivel === ''){
+                alert('Selecione um nivel para começar o jogo')
+                return false
+            } 
+            //alert(nivel)
+            window.location.href = 'jogo.html?' + nivel
+        }
+        
+    </script>
+</body>
+</html>

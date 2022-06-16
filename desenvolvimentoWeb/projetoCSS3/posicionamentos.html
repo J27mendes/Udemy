@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: lime;
+        }
+        #posicao {
+            background: 800px;
+            margin: 10px auto;
+            padding: 10px;
+            text-align: justify;
+            position: relative;
+        }
+        p {
+            width: 300px;
+        }
+
+        .fixo {
+            border: ridge 5px rgb(206, 106, 176);
+            background: darkkhaki;
+            padding: 3px;
+            position: fixed;
+            top: 75px;
+            left: 10px;
+            /*o posicionamento como ja diz o nome fixed é relativo a tela
+            e usam propriedades para alterar esse posicionamento*/
+
+        }
+        .relativo {
+            border: ridge 5px red;
+            padding: 3px;
+            position: relative;
+            /* no modelo position relative, pra funcionar direito é preciso
+            declarar top, right, bottom, left para posicionar o elemento*/
+            top: -10px;
+            right: -320px;
+        }
+        .absoluto {
+            border: ridge 5px goldenrod;
+            padding: 3px;
+            position: absolute;
+            background: grey;
+            top: 65px; 
+            right: 25px;
+        /*o comportamento do absolute é relativo ao seu pai mais proximo, se ele não encontrar
+        um posicionamento ele vai mais acima até achar*/     
+        }
+
+    </style>
+    <title>Posicionamentos</title>
+</head>
+<body>
+    <div id="posicao">
+        <h1>É meio complicado afirmar isso mas sim</h1>
+            <p class="fixo">Vou te falar… É meio complicado afirmar isso mas sim, eu me sinto mal em ver a felicidade alheia, em ver o quanto as pessoas podem desfrutar de coisas que eu não possuo, de quanto elas podem compartilhar alegrias junto com seus amigos, seus familiares, seus apoios. Sei que todos nós nunca seremos 100% satisfeitos com nossa vida, sei que muitos desses podem ter problemas bem maiores que os meus.
+            </p>
+            <p class="relativo">Vou te falar… É meio complicado afirmar isso mas sim, eu me sinto mal em ver a felicidade alheia, em ver o quanto as pessoas podem desfrutar de coisas que eu não possuo, de quanto elas podem compartilhar alegrias junto com seus amigos, seus familiares, seus apoios. Sei que todos nós nunca seremos 100% satisfeitos com nossa vida, sei que muitos desses podem ter problemas bem maiores que os meus.
+            </p>
+            <p class="absoluto">Vou te falar… É meio complicado afirmar isso mas sim, eu me sinto mal em ver a felicidade alheia, em ver o quanto as pessoas podem desfrutar de coisas que eu não possuo, de quanto elas podem compartilhar alegrias junto com seus amigos, seus familiares, seus apoios. Sei que todos nós nunca seremos 100% satisfeitos com nossa vida, sei que muitos desses podem ter problemas bem maiores que os meus.
+            </p>
+
+            </p>
+
+    </div>
+    
+</body>
+</html>
